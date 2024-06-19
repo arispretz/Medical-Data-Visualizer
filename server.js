@@ -1,7 +1,6 @@
 const fastify = require('fastify')({ logger: true });
 const path = require('path');
 
-// Configurar Fastify para servir archivos estáticos
 fastify.register(require('@fastify/static'), {
   root: path.join(__dirname, 'static'),
   prefix: '/static/',
